@@ -1,0 +1,18 @@
+---
+title: "Untitled"
+format: revealjs
+---
+
+# Placeholder Slides
+
+## Welcome to the placeholder slides
+
+- These slides hold a place. 
+
+- The place holds slides.
+
+- Holds place a slides.
+
+## Other content
+
+Here is other content to hold places - such as slides. 
