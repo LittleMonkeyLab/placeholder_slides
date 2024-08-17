@@ -1,11 +1,11 @@
 ---
-title: "Untitled"
+title: "PlaceHolder Slides"
+author: "Dr. Gordon Wright"
 format: 
   revealjs:
     embed-resources: true
+    mainfont: "Atkinson Hyperlegible"
 ---
-
-# Placeholder Slides
 
 ## Welcome to the placeholder slides
 
