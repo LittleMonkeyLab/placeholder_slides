@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "lectures/testlecture.html#a-simple-test-lecture",
+    "href": "lectures/testlecture.html#a-simple-test-lecture",
+    "title": "RevealJS Template Slides",
+    "section": "A simple test lecture",
+    "text": "A simple test lecture\nideas are excellent\n## Slide 2\nanother slide\n\n\n\n\nhttps://littlemonkeylab.com\n\n\n\n\n\n\n\n \n\n\nExample YAML-based Header"
+  },
+  {
+    "objectID": "placeholder_slides.html#other-content",
+    "href": "placeholder_slides.html#other-content",
+    "title": "PlaceHolder Slides",
+    "section": "Other content",
+    "text": "Other content\nHere is other content to hold places - such as slides.\n\n\n\n\nhttps://littlemonkeylab.com\n\n\n\n\n\n\n\n \n\n\nExample YAML-based Header"
+  },
+  {
     "objectID": "template.html#level-2-heading",
     "href": "template.html#level-2-heading",
     "title": "RevealJS Template Slides",
@@ -12,6 +26,20 @@
     "title": "RevealJS Template Slides",
     "section": "Level 2 Heading",
     "text": "Level 2 Heading\nIt consists of four modules. Each module of the Foundation of LA includes:\n\n\nSelected readings\n\n\n\n\nConceptual overview slidedeck\n\n\n\n\nCode a-long slidedeck\n\n\n\n\nCase study activity that correlates with the Learning Analytics workflow\n\n\n\n\nOptional badge activity"
+  },
+  {
+    "objectID": "template.html#section",
+    "href": "template.html#section",
+    "title": "RevealJS Template Slides",
+    "section": "",
+    "text": "(A slide with no title)"
+  },
+  {
+    "objectID": "template.html#section-1",
+    "href": "template.html#section-1",
+    "title": "RevealJS Template Slides",
+    "section": "",
+    "text": "(Another slide with no title)"
   },
   {
     "objectID": "template.html#copy-heavy-with-reference",
@@ -119,11 +147,11 @@
     "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations"
   },
   {
-    "objectID": "template.html#section",
-    "href": "template.html#section",
+    "objectID": "template.html#section-2",
+    "href": "template.html#section-2",
     "title": "RevealJS Template Slides",
     "section": "",
-    "text": "(A slide with no title)"
+    "text": "What’s next?\n\n\n::: - Complete the Prepare part of the Case Study - Complete the R Programming primer: Work with Data - Do pre-readings for tomorrow. :::"
   },
   {
     "objectID": "template.html#references",
@@ -131,26 +159,5 @@
     "title": "RevealJS Template Slides",
     "section": "References",
     "text": "References\n\n\n\n\nhttps://littlemonkeylab.com\n\n\n\n\n\n\n\n \n\n\nExample YAML-based Header\n\n\n \n\n\n\n\nMorawski, J. G. (2005). Reflexivity and the psychologist. History of the Human Sciences, 18(4), 77–105. https://doi.org/10.1177/0952695105058472"
-  },
-  {
-    "objectID": "placeholder_slides.html#other-content",
-    "href": "placeholder_slides.html#other-content",
-    "title": "PlaceHolder Slides",
-    "section": "Other content",
-    "text": "Other content\nHere is other content to hold places - such as slides.\n\n\n\n\nhttps://littlemonkeylab.com\n\n\n\n\n\n\n\n \n\n\nExample YAML-based Header"
-  },
-  {
-    "objectID": "template.html#section-1",
-    "href": "template.html#section-1",
-    "title": "RevealJS Template Slides",
-    "section": "",
-    "text": "(Another slide with no title)"
-  },
-  {
-    "objectID": "template.html#section-2",
-    "href": "template.html#section-2",
-    "title": "RevealJS Template Slides",
-    "section": "",
-    "text": "What’s next?\n\n\n::: - Complete the Prepare part of the Case Study - Complete the R Programming primer: Work with Data - Do pre-readings for tomorrow. :::"
   }
 ]
