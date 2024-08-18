@@ -1,0 +1,354 @@
+---
+title: "RevealJS Template Slides"
+author: "Dr. Gordon Wright"
+affiliation: "LittleMonkeyLab @Goldsmiths"
+description: "Template Slides"
+bibliography: references.bib
+csl: apa7.csl
+format: 
+  revealjs:
+    theme: custom.scss
+    slide-number: true
+    embed-resources: true
+    sc-sb-title: true
+    logo: images/LMLLOGO.png
+    footer: <https://littlemonkeylab.com>
+    header: Example YAML-based Header
+    header-logo: images/GoldLogo.png
+    controls: true
+    controls-layout: edges
+    controls-tutorial: true
+    preview-links: true
+    webcam: 
+      toggleKey: "c"
+      enabled: false
+      persistent: false
+filters:
+  - reveal-header
+  - webcam
+---
+
+## Level 2 Heading
+
+Section Bold Impact Heading (TODO)
+
+## Level 2 Heading
+
+It consists of four modules. Each module of the Foundation of LA
+includes:
+
+::: {.fragment .fade-in-then-semi-out}
+-   Selected readings
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+-   Conceptual overview slidedeck
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+-   Code a-long slidedeck
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+-   Case study activity that correlates with the Learning Analytics
+    workflow
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+-   Optional badge activity
+:::
+
+# Intro {data-video="top-right"}
+
+-   This Quarto extension adds a live video feed from your webcam in
+    your slides. Ensure your webcam is enabled in the browser. You may
+    need to refresh the webpage after enabling the webcam.
+-   Press \[C\] to toggle camera!
+-   Click the video image to switch input.
+
+# Different position {data-video="top-left small"}
+
+# Big {data-video="top-right big"}
+
+# Small {data-video="top-left small"}
+
+# Disabled {data-video="false"}
+
+# Enabled again {data-video="true top-right"}
+
+# Learn more at [parmsam/quarto-webcam](https://github.com/parmsam/quarto-webcam)
+
+## Copy heavy with reference
+
+This is an example of the module introduction @morawski2005
+
+## Module Objectives - change to your module objectives
+
+-   Understanding Types of `Learning Environments`:
+    -   By the end of this module, learners will be able to identify and
+        describe different types of learning environments, explaining
+        their unique features and applications in educational research.
+
+## Pretty Code {auto-animate="true"}
+
+-   Over 20 syntax highlighting themes available
+-   Default theme optimized for accessibility
+
+``` r
+# Define a server for the Shiny app
+function(input, output) {
+  
+  # Fill in the spot we created for a plot
+  output$phonePlot <- renderPlot({
+    # Render a barplot
+  })
+}
+```
+
+::: footer
+Learn more: [Syntax
+Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
+:::
+
+## Code Animations {auto-animate="true"}
+
+-   Over 20 syntax highlighting themes available
+-   Default theme optimized for accessibility
+
+``` r
+# Define a server for the Shiny app
+function(input, output) {
+  
+  # Fill in the spot we created for a plot
+  output$phonePlot <- renderPlot({
+    # Render a barplot
+    barplot(WorldPhones[,input$region]*1000, 
+            main=input$region,
+            ylab="Number of Telephones",
+            xlab="Year")
+  })
+}
+```
+
+::: footer
+Learn more: [Code
+Animations](https://quarto.org/docs/presentations/revealjs/advanced.html#code-animations)
+:::
+
+## Line Highlighting
+
+-   Highlight specific lines for emphasis
+-   Incrementally highlight additional lines
+
+``` {.python code-line-numbers="4-5|7|10"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+::: footer
+Learn more: [Line
+Highlighting](https://quarto.org/docs/presentations/revealjs/#line-highlighting)
+:::
+
+## Executable Code
+
+```{r}
+#| echo: true
+#| fig-width: 10
+#| fig-height: 4.5
+library(ggplot2)
+ggplot(mtcars, aes(hp, mpg, color = am)) +
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "loess")
+```
+
+::: footer
+Learn more: [Executable
+Code](https://quarto.org/docs/presentations/revealjs/#executable-code)
+:::
+
+## Slide Backgrounds {background="#43464B"}
+
+Set the `background` attribute on a slide to change the background color
+(all CSS color formats are supported).
+
+Different background transitions are available via the
+`background-transition` option.
+
+::: footer
+Learn more: [Slide
+Backgrounds](https://quarto.org/docs/presentations/revealjs/#color-backgrounds)
+:::
+
+## Media Backgrounds {background="#43464B" background-image="images/othermonkey.png"}
+
+You can also use the following as a slide background:
+
+-   An image: `background-image`
+
+-   A video: `background-video`
+
+-   An iframe: `background-iframe`
+
+::: footer
+Learn more: [Media
+Backgrounds](https://quarto.org/docs/presentations/revealjs/#image-backgrounds)
+:::
+
+## Absolute Position
+
+Position images or other elements at precise locations
+
+![](images/LMLLOGO.png){.absolute top="170" left="30" width="1250"}
+
+![](images/othermonkey.png){.absolute .fragment top="150" right="50"
+width="650"}
+
+![](images/othermonkey.png){.absolute .fragment bottom="110" right="130"
+width="300"}
+
+::: footer
+Learn more: [Absolute
+Position](https://quarto.org/docs/presentations/revealjs/advanced.html#absolute-position)
+:::
+
+## Slide Transitions {.smaller}
+
+The next few slides will transition using the `slide` transition
+
+| Transition | Description                                                            |
+|------------|------------------------------------------------------------------------|
+| `none`     | No transition (default, switch instantly)                              |
+| `fade`     | Cross fade                                                             |
+| `slide`    | Slide horizontally                                                     |
+| `convex`   | Slide at a convex angle                                                |
+| `concave`  | Slide at a concave angle                                               |
+| `zoom`     | Scale the incoming slide so it grows in from the center of the screen. |
+
+::: footer
+Learn more: [Slide
+Transitions](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions)
+:::
+
+## Tabsets {.smaller .scrollable transition="slide"}
+
+::: panel-tabset
+### Plot
+
+```{r}
+library(ggplot2)
+ggplot(mtcars, aes(hp, mpg, color = am)) +
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "loess")
+```
+
+### Data
+
+```{r}
+knitr::kable(mtcars)
+```
+:::
+
+::: footer
+Learn more:
+[Tabsets](https://quarto.org/docs/presentations/revealjs/#tabsets)
+:::
+
+## Interactive Slides {.smaller transition="slide"}
+
+Include Jupyter widgets and htmlwidgets in your presentations
+
+```{r}
+#| echo: false
+#| fig-height: 5
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+```
+
+::: footer
+Learn more: [Jupyter
+widgets](https://quarto.org/docs/interactive/widgets/jupyter.html),
+[htmlwidgets](https://quarto.org/docs/interactive/widgets/htmlwidgets.html)
+:::
+
+## Preview Links
+
+Navigate to hyperlinks without disrupting the flow of your presentation.
+
+Use the `preview-links` option to open links in an iframe on top of your
+slides. Try clicking the link below for a demonstration:
+
+::: {style="text-align: center; margin-top: 1em"}
+[Matplotlib: Visualization with
+Python](https://matplotlib.org/){preview-link="true"
+style="text-align: center"}
+:::
+
+::: footer
+Learn more: [Preview
+Links](https://quarto.org/docs/presentations/revealjs/presenting.html#preview-links)
+:::
+
+## Easy Navigation
+
+::: {style="margin-bottom: 0.9em;"}
+Quickly jump to other parts of your presentation
+:::
+
+::: {layout="[1, 20]"}
+![](images/revealshortcuts.png){width="41"}
+
+Toggle the slide menu with the menu button (bottom left of slide) to go
+to other slides and access presentation tools.
+:::
+
+You can also press `m` to toggle the menu open and closed.
+
+::: footer
+Learn more:
+[Navigation](https://quarto.org/docs/presentations/revealjs/presenting.html#navigation-menu)
+:::
+
+## And More...
+
+-   [Touch](https://quarto.org/docs/presentations/revealjs/advanced.html#touch-navigation)
+    optimized (presentations look great on mobile, swipe to navigate
+    slides)
+-   [Footer &
+    Logo](https://quarto.org/docs/presentations/revealjs/#footer-logo)
+    (optionally specify custom footer per-slide)
+-   [Auto-Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide)
+    (step through slides automatically, without any user input)
+-   [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex)
+    (allows your audience to follow the slides of the presentation you
+    are controlling on their own phone, tablet or laptop).
+
+::: footer
+Learn more: [Quarto
+Presentations](https://quarto.org/docs/presentations/revealjs/)
+:::
+
+##  {background="#143156"}
+
+::: {style="text-align: left; margin-top: 1em"}
+**What's next?**
+:::
+
+<br/>
+
+::: - Complete the `Prepare part of the Case Study` - Complete the R
+Programming primer: [Work with
+Data](https://rstudio.cloud/learn/primers/2) - Do pre-readings for
+tomorrow. :::
+
+## References

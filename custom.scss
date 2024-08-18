@@ -1,0 +1,121 @@
+/*-- scss:defaults --*/
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/brusher');
+
+$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+$presentation-title-slide-text-align: "left";
+$presentation-font-size-root: 36px;
+$presentation-title-slide-text-align: "left";
+$code-block-font-size: 0.7em;
+$link-color: #80a9d7;
+$body-color: #22304e;
+
+:root {
+  --pink: #983E82;   /* hsl(315, 42%, 42%) */
+  --orange: #E2A458; /* hsl( 33, 70%, 62%) */
+  --yellow: #F5DC70; /* hsl( 49, 87%, 70%) */
+  --green: #59935B;  /* hsl(122, 25%, 46%) */
+  --blue: #467AAC;   /* hsl(209, 42%, 47%) */
+  --purple: #61589C; /* hsl(248, 28%, 48%) */
+}
+
+/*-- scss:rules --*/
+
+.reveal .slide-logo {
+  height: 100px !important;
+  width: 100px !important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+details>summary {
+  font-size: 0.75em;
+}
+
+.smaller {
+  font-size: 0.5em;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.larger {
+  font-size: 1.5em;
+}
+
+.largest {
+  font-size: 3em;
+}
+
+.reveal pre {
+  overflow-x: auto;
+}
+.reveal pre code {
+  word-wrap: normal;
+  white-space: pre;
+  background-color: #22304e;
+  color: white;
+}
+
+.code-with-filename .code-with-filename-file pre {
+  margin-bottom: 0;
+  background-color: #E2E2E2;
+}
+
+body {
+  margin-top: 18px;
+  box-shadow: 0 -18px 0 0px #f1c40f, /* yellow */
+
+}
+
+/* references with hanging indent */
+.csl-entry {
+  padding-left: 2em ;
+  text-indent: -2em ;
+}
+
+/* set styles for alert boxes */
+
+.dangerous, .warning, .info, .quiz, .alert, .try {
+  padding: 1em 1em 0.25em 3.5em;
+  margin: 10px 0;
+  background-color: hsla(0, 0%, 100%, .1);
+  background-position: 0.5em 0.5em;
+  background-size: 2.5em;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.dangerous {
+  background-image: url("./images/alerts/danger.svg");
+  background-color: #f7adc6;
+  border: 1px solid #e91e63;
+}
+
+.warning {
+  background-image: url("./images/alerts/warning.svg");
+  background-color: #fbedb6;
+  border: 1px solid #f1c40f;
+}
+
+.info {
+  background-image: url("./images/alerts/info.svg");
+  background-color: #abecc7;
+  border: 1px solid #2ecc71;
+}
+
+.try {
+  background-image: url("./images/alerts/loki.svg");
+  background-color: #bbbbff;
+  border: 1px solid #000080;
+}
+
+.quiz {
+  background-image: url("./images/alerts/quiz.svg");
+  background-color: #cecece;
+  border: 1px solid #22304e;
+}
