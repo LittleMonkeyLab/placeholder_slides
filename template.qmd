@@ -3,29 +3,7 @@ title: "RevealJS Template Slides"
 author: "Dr. Gordon Wright"
 affiliation: "LittleMonkeyLab @Goldsmiths"
 description: "Template Slides"
-bibliography: references.bib
-csl: apa7.csl
-format: 
-  revealjs:
-    theme: custom.scss
-    slide-number: true
-    embed-resources: true
-    sc-sb-title: true
-    logo: images/LMLLOGO.png
-    footer: <https://littlemonkeylab.com>
-    header: Example YAML-based Header
-    header-logo: images/GoldLogo.png
-    controls: true
-    controls-layout: edges
-    controls-tutorial: true
-    preview-links: true
-    webcam: 
-      toggleKey: "c"
-      enabled: false
-      persistent: false
-filters:
-  - reveal-header
-  - webcam
+format: revealjs
 ---
 
 ## Level 2 Heading
@@ -58,25 +36,13 @@ includes:
 -   Optional badge activity
 :::
 
-# Intro {data-video="top-right"}
+##  {background-color="aquamarine"}
 
--   This Quarto extension adds a live video feed from your webcam in
-    your slides. Ensure your webcam is enabled in the browser. You may
-    need to refresh the webpage after enabling the webcam.
--   Press \[C\] to toggle camera!
--   Click the video image to switch input.
+(A slide with no title)
 
-# Different position {data-video="top-left small"}
+##  {background-color="black" background-image="https://placekitten.com/100/100" background-size="100px" background-repeat="repeat"}
 
-# Big {data-video="top-right big"}
-
-# Small {data-video="top-left small"}
-
-# Disabled {data-video="false"}
-
-# Enabled again {data-video="true top-right"}
-
-# Learn more at [parmsam/quarto-webcam](https://github.com/parmsam/quarto-webcam)
+(Another slide with no title)
 
 ## Copy heavy with reference
 

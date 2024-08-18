@@ -1,20 +1,17 @@
 ---
 title: "PlaceHolder Slides"
 author: "Dr. Gordon Wright"
-format: 
-  revealjs:
-    embed-resources: true
-    mainfont: "Atkinson Hyperlegible"
+format: revealjs
 ---
 
 ## Welcome to the placeholder slides
 
-- These slides hold a place. 
+-   These slides hold a place.
 
-- The place holds slides.
+-   The place holds slides.
 
-- Holds place a slides.
+-   Holds place a slides.
 
 ## Other content
 
-Here is other content to hold places - such as slides. 
+Here is other content to hold places - such as slides.

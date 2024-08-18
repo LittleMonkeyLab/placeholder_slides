@@ -1,0 +1,22 @@
+project: 
+  type: website
+  
+bibliography: references.bib
+csl: apa7.csl
+format: 
+  revealjs:
+    theme: custom.scss
+    slide-number: true
+    embed-resources: true
+    sc-sb-title: true
+    logo: images/LMLLOGO.png
+    footer: <https://littlemonkeylab.com>
+    header: Example YAML-based Header
+    header-logo: images/GoldLogo.png
+    controls: true
+    controls-layout: edges
+    controls-tutorial: true
+    preview-links: true
+
+filters:
+  - reveal-header

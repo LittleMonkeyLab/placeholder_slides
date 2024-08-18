@@ -1,0 +1,15 @@
+---
+title: "RevealJS Template Slides"
+author: "Dr. Gordon Wright"
+affiliation: "LittleMonkeyLab @Goldsmiths"
+description: "Template Slides"
+format: revealjs
+---
+
+## A simple test lecture
+
+ideas are excellent
+
+## Slide 2
+
+another slide
